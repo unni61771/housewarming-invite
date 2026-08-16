@@ -1,0 +1,10 @@
+{
+  "name": "housewarming-invite",
+  "version": "1.0.0",
+  "description": "Housewarming invitation static site",
+  "scripts": {
+    "build": "echo \"No build step required for static site\""
+  },
+  "author": "",
+  "license": "ISC"
+}
