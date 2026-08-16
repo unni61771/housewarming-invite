@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housewarming Invitation | ASWATHI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slideshow-image" style="background-image: url('images/img3.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('images/img1.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('images/img2.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('images/img4.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('images/img5.jpg')"></div>
+    </div>
+    
+    <div class="overlay"></div>
+
+    <div class="content-wrapper">
+        <header class="fade-in-up">
+            <h2 class="pre-title">You are cordially invited to the</h2>
+            <h1 class="main-title">Housewarming Ceremony</h1>
+            <p class="subtitle">of our new residence</p>
+        </header>
+
+        <section class="house-name-section fade-in-up delay-1">
+            <h1 class="house-name">ASWATHI</h1>
+        </section>
+
+        <section class="welcome-section fade-in-up delay-2">
+            <p class="welcome-message">
+                "A new home is a place for memories to be made and dreams to come true. We would be absolutely delighted if you could join us in celebrating this beautiful new beginning."
+            </p>
+        </section>
+
+        <section class="details-section glass-card fade-in-up delay-3">
+            <div class="scratch-reveal-section">
+                <p class="scratch-instruction">Scratch to reveal the date & time!</p>
+                <div class="scratch-container">
+                    <div class="scratch-content">
+                        <strong>19th August 2026</strong><br>
+                        12 Noon onwards
+                    </div>
+                    <canvas id="scratch-canvas"></canvas>
+                </div>
+            </div>
+
+            <div class="detail-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="address">
+                    <p>Behind INCORE Furniture</p>
+                    <p>Chettipeedika, Kannur</p>
+                </div>
+            </div>
+            
+            <a href="https://maps.app.goo.gl/rkiQZgVRUaz4LLVt5?g_st=iw" target="_blank" class="map-btn">
+                <i class="fa-solid fa-map-location-dot"></i> View on Google Maps
+            </a>
+        </section>
+
+        <section class="gallery-section fade-in-up delay-4">
+            <h3 class="gallery-title">Glimpses of Our New Home</h3>
+            <div class="gallery-grid">
+                <img src="images/img1.jpg" alt="House Image 1" class="gallery-img">
+                <img src="images/img2.jpg" alt="House Image 2" class="gallery-img">
+                <img src="images/img4.jpg" alt="House Image 3" class="gallery-img">
+                <img src="images/img5.jpg" alt="House Image 4" class="gallery-img">
+            </div>
+        </section>
+
+        <section class="hosts-section fade-in-up delay-5">
+            <h3 class="warm-regards">With Warm Regards,</h3>
+            <div class="host-names">
+                <p>Dr V Suresh &amp; Preetha Koyili</p>
+                <p>Dr Adithya Suresh</p>
+                <p>Dr Aswathi Suresh</p>
+            </div>
+        </section>
+
+        <footer class="fade-in-up delay-6">
+            <p class="blessing-note"><em>* Presents in Blessing Only *</em></p>
+        </footer>
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expanded-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
